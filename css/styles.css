@@ -1,0 +1,211 @@
+  /* CSS styles */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(2, 31, 101);
+      margin: 10px;
+      padding: 10px;
+  }
+
+  header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+  }
+
+  main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+  }
+
+  footer a { color:#ffcc00; font-size: 12px;}
+
+  /* Style links in the footer when hovered over with an underline */
+  footer a:hover {
+      text-decoration: underline;
+      color:#ff7b00
+      /* Add underline on hover */
+  }
+
+  /* Style visited journal entries with a different background color */
+  main article:visited {
+      background-color: #f30707;
+  }
+
+  /* Style the first and last journal entries differently */
+  main article:first-child {
+      border-top: 4px dotted #333;
+      padding-top: 20px;
+  }
+
+  main article:last-child {
+      border-bottom: 2px solid #ed0b0b;
+      padding: 20px 5px;
+      background: #fddede;
+  }
+
+  /* Decorative image before each journal entry */
+  main article::before {
+      content: "📖";
+
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  /* Small footnote or quote after each journal entry */
+  main article::after {
+      content: "— Encyclopedia Britannica, 19 Aug. 2023.";
+      display: block;
+      font-size: 14px;
+      font-style: italic;
+      text-align: right;
+      margin-top: 10px;
+  }
+
+  /* Style paragraphs with class "highlight" within journal entries */
+  main article p.highlight {
+      background-color: #ffffcc;
+      /* Background color for highlighted paragraphs */
+      color: #333;
+      /* Text color for highlighted paragraphs */
+      padding: 10px;
+      border: 5px solid #ccc;
+  }
+
+
+
+  /* Style buttons with disabled attribute differently than active buttons */
+  .button {
+      align-items: center; 
+      margin: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100%;
+    vertical-align: top;
+    padding:0px;
+  }
+
+  .button[disabled] {
+      background-color: rgb(115, 115, 250);
+      /* Disabled button background color */
+      color: #000000;
+      cursor: not-allowed;
+      padding: 12px 20px;
+
+  }
+  .button a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 20px;
+    width: auto;
+    display: block;
+}
+  .button a:hover {
+      background-color: #f30707;
+
+  }
+
+
+  button a:visited {    background-color: #3513db;
+    color: #ffffff;
+
+
+}
+
+  .gallery {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      color: #ccc;
+      align-items: center;
+      background-color: #000000;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .gallery img {
+      width: 40%;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #ffffff;
+      margin-top: 30px;
+    
+  }
+  .gallery img:hover {
+
+    border-color: #ffcc00;
+    width: 45%;
+    margin-left: -30px;
+    margin-top:-30px
+  
+}
+.gallery img:hover:last-child {
+    border-color: #ffcc00;
+    width: 45%;
+    margin-right: -15px;
+    margin-left: 4px;
+    margin-top:-30px
+  
+}
+
+  .info {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      color: #ccc;
+      align-items: center;
+      background-color: #000000;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+     
+  }
+  .subscription{
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    color: #ccc;
+    align-items: center;
+    background-color: #a0a0a0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+  /* Style input elements with type="text" differently than type="password" */
+  input[type="text"] {
+    background-color: #ffa8a8;
+    /* Text input background color */
+    border: 1px solid #ddd;
+    /* Text input border */
+    padding: 5px;
+}
+
+input[type="password"] {
+    background-color: #fff;
+    /* Password input background color */
+    border: 1px solid #ccc;
+    /* Password input border */
+    padding: 5px;
+}
+
+  h3 {
+      color: #ccc;
+
+  }
